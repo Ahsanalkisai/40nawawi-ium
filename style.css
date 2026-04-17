@@ -3,8 +3,8 @@
 /* Dhivehi font */
 @font-face {
     font-family: 'mvtyper';
-    src: url('mvtyper-mod.woff2') format('woff2'),
-         url('mvtyper-mod.woff') format('woff');
+    src: url('Faruma.woff2') format('woff2'),
+         url('Faruma.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
