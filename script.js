@@ -50,27 +50,28 @@ hadiths.forEach(hadith => {
     card.className = 'hadith-card';
 
     card.innerHTML = `
-        <h3>${hadith.title}</h3>
+        <h3 class="dhivehi">${hadith.title}</h3>
         
         <audio id="audio-${hadith.id}" controls>
             <source src="${hadith.audioUrl}" type="audio/mpeg">
-            ތިޔަ ބޭނުންކުރައްވާ ބްރައުޒަރ އަކީ އޯޑިއޯ ސަޕޯޓްކުރާ ބްރައުޒަރެއް ނޫނެވެ.
+            <p class="dhivehi">ތިޔަ ބޭނުންކުރައްވާ ބްރައުޒަރ އަކީ އޯޑިއޯ ސަޕޯޓްކުރާ ބްރައުޒަރެއް ނޫނެވެ.</p>
         </audio>
 
-        <label class="repeat-control">
+        <label class="repeat-control dhivehi">
             <input type="checkbox" onchange="toggleRepeat(${hadith.id}, this.checked)">
             އޮޓޯއިން ރިޕީޓްކުރޭ
         </label>
 
         <div class="tabs-container">
-            <button class="tab-btn" onclick="openTab(event, 'arabic-${hadith.id}', ${hadith.id})">ޢަރަބި</button>
-            <button class="tab-btn" onclick="openTab(event, 'trans-${hadith.id}', ${hadith.id})">ތަރުޖަމާ</button>
+            <button class="tab-btn dhivehi" onclick="openTab(event, 'arabic-${hadith.id}', ${hadith.id})">ޢަރަބި</button>
+            <button class="tab-btn dhivehi" onclick="openTab(event, 'trans-${hadith.id}', ${hadith.id})">ތަރުޖަމާ</button>
         </div>
 
         <div id="arabic-${hadith.id}" class="tab-content arabic-text tab-group-${hadith.id}">
             ${hadith.arabic}
         </div>
-        <div id="trans-${hadith.id}" class="tab-content tab-group-${hadith.id}">
+
+        <div id="trans-${hadith.id}" class="tab-content dhivehi tab-group-${hadith.id}">
             ${hadith.translation}
         </div>
     `;
@@ -78,6 +79,7 @@ hadiths.forEach(hadith => {
     container.appendChild(card);
 });
 
+// އޯޑިއޯ ރިޕީޓް ކުރާ ފަންކްޝަން
 function toggleRepeat(id, isChecked) {
     const audioElement = document.getElementById(`audio-${id}`);
     if (audioElement) {
@@ -85,6 +87,7 @@ function toggleRepeat(id, isChecked) {
     }
 }
 
+// ޓެބްތައް ބަދަލުކުރާ ފަންކްޝަން
 function openTab(evt, tabId, hadithId) {
     const tabContents = document.getElementsByClassName(`tab-group-${hadithId}`);
     const card = evt.currentTarget.closest('.hadith-card');
@@ -106,6 +109,7 @@ function openTab(evt, tabId, hadithId) {
     }
 }
 
+// ތީމް ބަދަލުކުރާ ބަޓަން
 const themeToggleBtn = document.getElementById('theme-toggle');
 
 themeToggleBtn.addEventListener('click', () => {
