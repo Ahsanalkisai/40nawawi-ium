@@ -53,8 +53,10 @@ body {
 
 /* ================= LANGUAGE FONTS ================= */
 
+/* ފޮންޓު މަސައްކަތްކުރާކަން ޔަގީންކުރަން ހުރިހާ އެއްޗެއް ރަތްކޮށްލުން */
 .dhivehi {
-    font-family: 'Faruma', sans-serif;
+    color: red !important;
+    font-family: 'Faruma' !important;
 }
 
 /* Arabic text */
