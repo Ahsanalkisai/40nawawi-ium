@@ -1,4 +1,16 @@
-/* ލައިޓް އަދި ޑާކް މޯޑުގެ ކުލަތައް */
+/* ================= FONT ================= */
+
+/* Dhivehi font */
+@font-face {
+    font-family: 'mvtyper';
+    src: url('mvtyper-mod.woff2') format('woff2'),
+         url('mvtyper-mod.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ================= COLORS ================= */
+
 :root {
     --bg-color: #f9f9f9;
     --card-bg: #ffffff;
@@ -23,6 +35,8 @@
     --tab-active-text: #121212;
 }
 
+/* ================= BASE ================= */
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--bg-color);
@@ -31,9 +45,25 @@ body {
     padding: 0;
     line-height: 1.8;
     transition: background-color 0.3s, color 0.3s;
-    direction: rtl; /* މުޅި ވެބްސައިޓް ކަނާތުން ވާތަށް */
-    text-align: right; /* ހުރިހާ ލިޔުމެއް ކަނާތަށް ފިޓްކުރުން */
+    direction: rtl;
+    text-align: right;
 }
+
+/* ================= LANGUAGE FONTS ================= */
+
+/* Dhivehi text */
+.dhivehi {
+    font-family: 'mvtyper', sans-serif;
+}
+
+/* Arabic text */
+.arabic-text {
+    font-family: 'Amiri', 'Traditional Arabic', serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/* ================= HEADER ================= */
 
 header {
     text-align: center;
@@ -64,15 +94,15 @@ header h1 {
     margin: 0;
     color: var(--heading-color);
     font-size: 1.7rem;
-    text-align: center;
 }
 
 header p {
     margin: 5px 0 0;
     color: var(--sub-text);
     font-size: 1rem;
-    text-align: center;
 }
+
+/* ================= MAIN ================= */
 
 main {
     max-width: 650px;
@@ -85,43 +115,25 @@ main {
     margin-bottom: 15px;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
     border: 1px solid var(--border-color);
 }
 
-.hadith-card h3 {
-    margin: 0;
-    font-size: 1.2rem;
-    color: var(--heading-color);
-    border-bottom: 1px solid var(--border-color);
-    padding-bottom: 10px;
-    text-align: right;
-}
+/* ================= AUDIO ================= */
 
 audio {
     width: 100%;
-    outline: none;
 }
+
+/* ================= REPEAT ================= */
 
 .repeat-control {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 1rem;
     color: var(--sub-text);
-    cursor: pointer;
-    padding: 5px 0;
-    justify-content: flex-start;
 }
 
-.repeat-control input {
-    cursor: pointer;
-    width: 20px;
-    height: 20px;
-}
+/* ================= TABS ================= */
 
 .tabs-container {
     display: flex;
@@ -136,13 +148,6 @@ audio {
     padding: 12px;
     border-radius: 6px;
     cursor: pointer;
-    font-size: 1rem;
-    text-align: center;
-    transition: 0.2s;
-}
-
-.tab-btn:hover {
-    opacity: 0.9;
 }
 
 .tab-btn.active {
@@ -158,8 +163,6 @@ audio {
     border-radius: 6px;
     border: 1px solid var(--border-color);
     font-size: 1.1rem;
-    text-align: right;
-    direction: rtl;
     white-space: pre-line;
 }
 
@@ -167,11 +170,7 @@ audio {
     display: block;
 }
 
-.arabic-text {
-    font-family: 'Traditional Arabic', 'Times New Roman', serif;
-    font-size: 1.6rem;
-    line-height: 2;
-}
+/* ================= FOOTER ================= */
 
 footer {
     text-align: center;
