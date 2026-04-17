@@ -3,11 +3,11 @@
 /* Dhivehi font */
 @font-face {
     font-family: 'Faruma';
-    src: url('fonts/Faruma.woff2') format('woff2'),
-         url('fonts/Faruma.woff') format('woff');
+    /* ފޯލްޑަރުގެ ކުރިއަށް ./ އިތުރުކުރުން މުހިންމު */
+    src: url('./fonts/Faruma.woff2') format('woff2'),
+         url('./fonts/Faruma.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
 }
 
 /* ================= COLORS ================= */
@@ -53,10 +53,10 @@ body {
 
 /* ================= LANGUAGE FONTS ================= */
 
-/* ފޮންޓު މަސައްކަތްކުރާކަން ޔަގީންކުރަން ހުރިހާ އެއްޗެއް ރަތްކޮށްލުން */
+/* ޔަގީންކުރުމަށްޓަކައި ހުރިހާ ދިވެހި ލިޔުމެއްގެ ކުލަ ބަދަލުކޮށްލަން */
 .dhivehi {
-    color: red !important;
-    font-family: 'Faruma' !important;
+    font-family: 'Faruma', sans-serif !important;
+    color: #2c3e50; /* ނުވަތަ ބޭނުން ކުލައެއް */
 }
 
 /* Arabic text */
