@@ -2,8 +2,9 @@
 
 /* Dhivehi font */
 @font-face {
-src: url('./fonts/Faruma.woff2') format('woff2'),
-     url('./fonts/Faruma.woff') format('woff');
+    font-family: 'Faruma';
+    src: url('../fonts/Faruma.woff2') format('woff2'),
+         url('../fonts/Faruma.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
