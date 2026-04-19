@@ -10,7 +10,6 @@
     font-style: normal;
 }
 
-
 /* ================= COLORS ================= */
 
 :root {
@@ -40,7 +39,6 @@
 /* ================= BASE ================= */
 
 body {
-    /* އިސްކަންދޭނީ ފަރުމާ ފޮންޓަށް */
     font-family: 'Faruma', 'Segoe UI', Tahoma, sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -54,13 +52,11 @@ body {
 
 /* ================= LANGUAGE FONTS ================= */
 
-/* ޔަގީންކުރުމަށްޓަކައި ހުރިހާ ދިވެހި ލިޔުމެއްގެ ކުލަ ބަދަލުކޮށްލަން */
 .dhivehi {
     font-family: 'Faruma', sans-serif !important;
-    color: #2c3e50; /* ނުވަތަ ބޭނުން ކުލައެއް */
+    color: #2c3e50;
 }
 
-/* Arabic text */
 .arabic-text {
     font-family: 'Amiri', 'Traditional Arabic', serif;
     font-size: 1.6rem;
@@ -92,7 +88,7 @@ header {
     border-radius: 20px;
     cursor: pointer;
     font-size: 0.95rem;
-    font-family: 'Faruma', sans-serif; /* ބަޓަން ފޮންޓު ދިވެހިކުރުން */
+    font-family: 'Faruma', sans-serif;
     transition: 0.2s;
 }
 
@@ -158,14 +154,13 @@ main {
     border: 1px solid var(--border-color);
     font-size: 1.15rem;
     white-space: pre-line;
-    font-family: 'Faruma', sans-serif; /* ތަރުޖަމާ ފޮންޓު ދިވެހިކުރުން */
+    font-family: 'Faruma', sans-serif;
 }
 
 .tab-content.active {
     display: block;
 }
 
-/* Arabic override in tab */
 .tab-content.arabic-text {
     font-family: 'Amiri', serif;
 }
