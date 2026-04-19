@@ -4,7 +4,8 @@
 @font-face {
     font-family: 'Faruma';
     src: url('../fonts/Faruma.woff2') format('woff2'),
-         url('../fonts/Faruma.woff') format('woff');
+         url('../fonts/Faruma.woff') format('woff'),
+         url('../fonts/Faruma.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
